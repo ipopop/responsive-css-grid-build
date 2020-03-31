@@ -192,7 +192,7 @@ h4{
 }
 footer{
   padding: 30px 20px;
-  background-color: var(--bg-color);
+  background-color: #14153D;
   background-image: url(assets/footer_image.png);
   background-size: 40%;
   background-repeat: no-repeat;
