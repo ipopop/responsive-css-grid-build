@@ -2,6 +2,10 @@
 :root{
   --primary: #FFC636;
   --secondary: #0A0B5B;
+  --bg-color: #14153D;
+  --btn-hover-color: #222;
+  --txt-color: #9893D8;
+  --light-color: #DDDBFF;
 }
 
 /* reset */
@@ -32,15 +36,15 @@ body{
   font-size: 1em;
 }
 .button:hover{
-  color: #222;
+  color: var(--btn-hover-color);
   background: var(--primary);
 }
 input,textarea{
   background: rgba(255,255,255,0.05);
   padding: 10px 16px;
   border-radius: 20px;
-  border: 2px solid #9893D8;
-  color: #f2f2f2;
+  border: 2px solid var(--txt-color);
+  color: var(--light-color);
   font-size: 1em;
 }
 
@@ -50,12 +54,12 @@ input,textarea{
   src: url(assets/fonts/Rubik-Regular.ttf);
 }
 h1,h2,h3,h4{
-  color: #DDDBFF;
+  color: var(--light-color);
   font-weight: normal;
   line-height: 1.4em;
 }
 p,a,li{
-  color: #9893D8;
+  color: var(--txt-color);
   line-height: 1.4em;
   font-size: 1em;
 }
@@ -135,11 +139,11 @@ h4{
   margin-left: 10%;
 }
 .projects h4{
-  color: #9994f7
+  color: var(--txt-color);
 }
 #skills{
   padding: 30px 20px;
-  background: #07083E;
+  background: var(--bg-color);
 }
 #skills h3{
   text-align: center;
@@ -163,7 +167,7 @@ h4{
 }
 #contact{
   padding: 30px 20px;
-  background: #080936;
+  background: var(--bg-color);
 }
 #contact h3, #contact p{
   margin-bottom: 0;
@@ -188,7 +192,7 @@ h4{
 }
 footer{
   padding: 30px 20px;
-  background-color: #14153D;
+  background-color: var(--bg-color);
   background-image: url(assets/footer_image.png);
   background-size: 40%;
   background-repeat: no-repeat;
